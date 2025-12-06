@@ -2,7 +2,7 @@ import subprocess
 from ..common.timestamp import print_timestamp
 
 def check_data():
-    script_path = r'D:\IPSP\ipsp_billing\backend_code\data_archive\controllers\cron\check_cron.js'
+    script_path = r'D:\Project\project_files\backend_code\data_archive\controllers\cron\check_cron.js'
     try:
         result = subprocess.run(['node', script_path ], capture_output=True, text=True, check=True)
         print_timestamp("チェック完了" + result.stdout)
