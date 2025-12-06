@@ -1,7 +1,7 @@
 import os
 from datetime import datetime, timedelta
 
-logpath = r"D:\IPSP\ipsp_billing\backend_code\client\logger"
+logpath = r"D:\Project\project_files\backend_code\client\logger"
 
 def get_week_start(date):
     return date - timedelta(days=date.weekday())
