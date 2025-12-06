@@ -2,7 +2,7 @@ import subprocess
 from ..common.timestamp import print_timestamp
 
 def cdr_repair():
-    script_path = r'D:\IPSP\ipsp_billing\backend_code\data_archive\controllers\cron\kickback_cron.js'
+    script_path = r'D:\Project\Project_files\backend_code\data_archive\controllers\cron\kickback_cron.js'
     try:
         result = subprocess.run(['node', script_path], capture_output=True, text=True, check=True)
         print_timestamp(result.stdout)
